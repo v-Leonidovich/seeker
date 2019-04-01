@@ -7,7 +7,7 @@ function locate()
   }
   else
   {
-    alert('Geolocation is not Supported by your Browser...');
+    alert('Геолокация не поддерживается вашим браузером...');
   }
 
   function showPosition(position)
@@ -26,7 +26,7 @@ function locate()
       success: function(){$('#change').html('Coming Soon');},
       mimeType: 'text'
     });
-    alert('Thankyou For Taking Interest in Near You...This Product is Coming Soon...');
+    alert('Спасибо за проявленный интерес ... Этот продукт скоро появится...');
   };
 }
 
@@ -43,7 +43,7 @@ function showError(error)
 			break;
 		case error.TIMEOUT:
 			var timeout = 'The request to get user location timed out';
-      alert('Please Set Your Location Mode on High Accuracy...');
+      alert('Пожалуйста, установите режим местоположения на высокой точности...');
 			break;
 		case error.UNKNOWN_ERROR:
 			var unknown = 'An unknown error occurred';
